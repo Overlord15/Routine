@@ -1,44 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <title>Structure</title>
 </head>
 
 <body>
-    <div style="width: 1000px;height: 590px;">
-        <div style="height: 100px;"></div>
-        <div style="height:40px;display: flex;">
-            <div style="width: 200px;display: flex;justify-content: center;align-items: center;">Home</div>
-            <div style="width: 200px;display: flex;justify-content: center;align-items: center;">About</div>
-            <div style="width: 200px;display: flex;justify-content: center;align-items: center;">Course</div>
-            <div style="width: 200px;display: flex;justify-content: center;align-items: center;">Gallery</div>
-            <div style="width: 200px;display: flex;justify-content: center;align-items: center;">Contact Us</div>
+    <div class="main-div">
+        <div class="first-div"></div>
+        <div class="second-div">
+            <div class="second-div-sub">Home</div>
+            <div class="second-div-sub">About</div>
+            <div class="second-div-sub">Course</div>
+            <div class="second-div-sub">Gallery</div>
+            <div class="second-div-sub">Contact Us</div>
         </div>
-        <div style="display: flex;flex-direction: row;">
-            <div style="display: flex;flex-direction: column;">
-                <div style="height: 40px;width: 250px;display: flex;justify-content: center;align-items: center;">Home
-                </div>
-                <div style="height: 40px;width: 250px;display: flex;justify-content: center;align-items: center;">About
-                </div>
-                <div style="height: 40px;width: 250px;display: flex;justify-content: center;align-items: center;">Course
-                </div>
-                <div style="height: 40px;width: 250px;display: flex;justify-content: center;align-items: center;">
-                    Gallery</div>
-                <div style="height: 40px;width: 250px;display: flex;justify-content: center;align-items: center;">
-                    Contact Us</div>
+        <div class="third-div">
+            <div class="third-div-sub-one">
+                <div class="third-div-sub-one-sub">Home</div>
+                <div class="third-div-sub-one-sub">About</div>
+                <div class="third-div-sub-one-sub">Course</div>
+                <div class="third-div-sub-one-sub">Gallery</div>
+                <div class="third-div-sub-one-sub">Contact Us</div>
             </div>
-            <div style="width: 750px;display: flex;justify-content: center;align-items: center;">Image Here</div>
+            <div class="third-div-sub-two-sub">
+                <img class="big-image" src="ImageHere.png" />
+            </div>
         </div>
-        <div style="height: 150px;display: flex;flex-direction: row;justify-content: center;align-items: center;">Our
-            Clients</div>
-        <div style="height: 100px;display: flex;flex-direction: row;">
-            <div style="width: 333px;display: flex;justify-content: center;align-items: center;">Image Here</div>
-            <div style="width: 333px;display: flex;justify-content: center;align-items: center;">Image Here</div>
-            <div style="width: 333px;display: flex;justify-content: center;align-items: center;">Image Here</div>
+        <div class="big-image">Our Clients</div>
+        <div style="height: 100px; display: flex; flex-direction: row">
+            <div class="img-fifth-div">
+                <img src="ImageHere.png" class="insert-img" />
+            </div>
+            <div class="img-fifth-div">
+                <img src="ImageHere.png" class="insert-img" />
+            </div>
+            <div class="img-fifth-div">
+                <img src="ImageHere.png" class="insert-img" />
+            </div>
         </div>
-        <div style="height: 40px; display: flex;justify-content: center;align-items: center;">Home | About | Course |
-            Gallery | Contact Us</div>
+        <div class="footer">Home | About | Course | Gallery | Contact Us</div>
     </div>
 </body>
 <style>
@@ -47,7 +48,96 @@
         text-align: center;
         font-size: large;
         font-weight: 600;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+    .main-div {
+        width: 1000px;
+        height: 590px;
+    }
+
+    .first-div {
+        height: 100px;
+    }
+
+    .second-div {
+        height: 40px;
+        display: flex;
+    }
+
+    .second-div-sub {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    । .third-div-sub-one {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .third-div-sub-one-sub {
+        height: 40px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .third-div-sub-two-sub {
+        width: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div-text {
+        height: 40px;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .insert-img {
+        width: 333px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .footer {
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-fifth-div {
+        width: 333px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .big-image {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
     }
 </style>
 
