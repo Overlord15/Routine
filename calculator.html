@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <center>
+        <h3>Calculator</h1>
+            <form name="cal">
+                <div>
+                    <input type="textbox" placeholder="Anwser" name="Ans">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="cal.Ans.value += '7'">
+                    <input type="button" value="8" onclick="cal.Ans.value += '8'">
+                    <input type="button" value="9" onclick="cal.Ans.value += '9'">
+                    <input type="button" value="/" onclick="cal.Ans.value += '/'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="cal.Ans.value += '4'">
+                    <input type="button" value="5" onclick="cal.Ans.value += '5'">
+                    <input type="button" value="6" onclick="cal.Ans.value += '6'">
+                    <input type="button" value="*" onclick="cal.Ans.value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="cal.Ans.value += '1'">
+                    <input type="button" value="2" onclick="cal.Ans.value += '2'">
+                    <input type="button" value="3" onclick="cal.Ans.value += '3'">
+                    <input type="button" value="-" onclick="cal.Ans.value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="cal.Ans.value += '0'">
+                    <input type="button" value="." onclick="cal.Ans.value += '.'">
+                    <input type="button" value="+" onclick="cal.Ans.value += '+'">
+                    <input type="button" value="=" onclick="cal.Ans.value = eval(cal.Ans.value)">
+                </div>
+                <input type="reset" value="Reset">
+
+            </form>
+    </center>
+</body>
+</html>
