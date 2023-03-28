@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <script>
+      function convert() {
+          const input = document.getElementById("input").value;
+          result = input * 0.621371;
+          document.getElementById('ans').innerHTML = result+" mile";
+        }
+    </script>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="input" />
+      <button onclick="convert()" id="convert">Convert</button>
+    </div>
+    <div>
+      <p type="text" id="ans" value=""></p>
+    </div>
+  </body>
+</html>

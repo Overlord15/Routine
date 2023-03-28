@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converter</title>
+    <script>
+      function fc() {
+        const input = document.getElementById("fah").value;
+        result = (input - 32) * (5 / 9);
+        document.getElementById("cela").innerHTML = result + " °C";
+      }
+      function cf() {
+        const input = document.getElementById("cel").value;
+        result = input * (9 / 5) + 32;
+        document.getElementById("faha").innerHTML = result + " °F";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <p>Celsius to Fahrenheit</p>
+      <input type="text" id="cel" />
+      <button onclick="cf()" id="convert">Convert</button>
+    </div>
+    <div>
+      <p type="text" id="faha" value=""></p>
+    </div>
+    <div>
+      <p>Fahrenheit to Celsius</p>
+      <input type="text" id="fah" />
+      <button onclick="fc()" id="convert">Convert</button>
+    </div>
+    <div>
+      <p type="text" id="cela" value=""></p>
+    </div>
+  </body>
+</html>
