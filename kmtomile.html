@@ -8,13 +8,14 @@
     <script>
       function convert() {
           const input = document.getElementById("input").value;
-          result = input * 0.621371;
+          result = (input * 0.621371).toFixed(2);
           document.getElementById('ans').innerHTML = result+" mile";
         }
     </script>
   </head>
   <body>
     <div>
+      <p>Enter Kilometer</p>
       <input type="text" id="input" />
       <button onclick="convert()" id="convert">Convert</button>
     </div>

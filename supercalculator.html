@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Calculator</title>
+  </head>
+  <body>
+    <label for="p1">P1:</label>
+    <input type="text" id="p1" />
+    <br />
+    <label for="p2">P2:</label>
+    <input type="text" id="p2" />
+    <br />
+    <label for="total">Total:</label>
+    <input type="text" id="total" />
+    <br />
+    <label for="obtain">Obtain:</label>
+    <input type="text" id="obtain" />
+    <br />
+    <label for="percentage">Percentage:</label>
+    <input type="text" id="percentage" />
+    <br />
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" />
+    <br />
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+      function calculate() {
+        const p1 = Number(document.getElementById("p1").value);
+        const p2 = Number(document.getElementById("p2").value);
+
+        const total = p1 + p2;
+        const obtain = total / 2;
+        const percentage = (obtain / 100) * 100;
+
+        let grade = "";
+        if (percentage >= 90) {
+          grade = "A+";
+        } else if (percentage >= 80) {
+          grade = "A";
+        } else if (percentage >= 70) {
+          grade = "B";
+        } else if (percentage >= 60) {
+          grade = "C";
+        } else if (percentage >= 50) {
+          grade = "D";
+        } else {
+          grade = "F";
+        }
+
+        document.getElementById("total").value = total;
+        document.getElementById("obtain").value = obtain;
+        document.getElementById("percentage").value = percentage + "%";
+        document.getElementById("grade").value = grade;
+      }
+    </script>
+  </body>
+</html>
