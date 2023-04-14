@@ -56,7 +56,6 @@ p {
 }
 
 div {
-    margin-top: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,9 +66,22 @@ div {
     left: 50%;
     transform: translate(-50%, -50%); */
 }
-h1{
+
+h1 {
     color: #6b5acd;
     text-decoration: underline;
     width: 100%;
     text-align: center;
+}
+
+#div {
+    margin-top: 10vh;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
 }
