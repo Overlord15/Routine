@@ -1,0 +1,18 @@
+<form action="send.html" onsubmit="" id="form">
+        <div id="inline">
+            <label for="fname">FIRST NAME</label>
+            <input type="text" name="fname" id="fname">
+            <p>(max 30 characters a-z and A-Z)</p>
+        </div>
+        <div id="inline">
+            <label for="lname">LAST NAME</label>
+            <input type="text" name="lname" id="lname">
+            <p>(max 30 characters a-z and A-Z)</p>
+        </div>
+        <div id="inline">
+            <label for="dob">DATE OF BIRTH</label>
+            <select name="dob" id="dob">
+                <option value="" disabled selected>Day:</option>
+            </select>
+        </div>
+
